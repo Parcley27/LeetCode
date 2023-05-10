@@ -1,0 +1,19 @@
+class Solution {
+    func isPalindrome(_ x: Int) -> Bool {
+        if x < 0 {
+            return false
+        } else {
+            let stringedX = String(x)
+            var flippedX = ""
+            for char in stringedX {
+                flippedX = String(char) + flippedX
+            }
+
+            if stringedX == flippedX {
+                return true
+            } else {
+                return false
+            }
+        }
+    }
+}
